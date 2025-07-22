@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Font Style */
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* Display-Flex */
+.d-flex{
+    display: flex;
+}
+/*  Design Navbar Section */
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+.nav-text{
+    gap:34px;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:576px) {
+    body{
+        max-width: 520px;
+        margin: 0 20px;
+    }
+     .navbar{
+        text-align: center;
+        align-items: center;
+        /* margin-left: 50px; */
+     }
+     .nav-text{
+        flex-direction: column;
+        gap: 8px;
+     }
+    
+}
+/*  Design Banner Section */
+.banner-title{
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: #3A3A3A;
+}
+.banner-discription{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3A3A3A;
+}
+.banner-button{
+    height: 2.75rem;
+    width: 12.25rem;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 2.5rem;
+}
+header div a{
+    text-decoration: none;
+    color: white;
+}
+.banner-image{
+    position: relative;
+}
+.camera{
+    width: 80%;
+    top: -400px;
+    left: 35px;
+    position: relative;
+}
+.banner-text{
+    margin-top: 90px;
+}
+.banner{
+    gap: 70px;
+    margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .banner-images {
+        position: relative;
+        width: 350px;
+        height: 350px;
+    }
+    .circle {
+        width: 100%;
+    }
+    .camera {
+        position: absolute;
+        transform: translate(0px, 440px);
+        width: 80%; 
+    }
+    .banner-text {
+        margin-top: 0;
+        padding: 0 20px;
+    }
+}
+
+/* design Logo Section */
+main{
+    position: relative;
+    top: -330px;
+}
+.logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0 125px ;
+    margin-top: 59px;
+    gap: 50px;
+}
+@media screen and (max-width:576px){
+       .logo{
+        transform: translate(0px, 380px);
+        grid-template-columns: repeat(4,1fr);
+    
+        margin: 0 42px;
+        gap: 15px;  
+    }
+    .logo img{
+        width: 80%;
+    }
+}
+/* Design Cards */
+
